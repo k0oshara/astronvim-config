@@ -16,10 +16,10 @@ return {
         },
 
         filtered_items = {
-          visible = true,
-          hide_dotfiles = false,
+          visible = false,
+          hide_dotfiles = true,
           hide_gitignored = false,
-          hide_hidden = false,
+          hide_hidden = true,
         },
 
         group_empty_dirs = true,
