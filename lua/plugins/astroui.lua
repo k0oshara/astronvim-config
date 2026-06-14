@@ -3,6 +3,12 @@ return {
   "AstroNvim/astroui",
   ---@type AstroUIOpts
   opts = {
-    colorscheme = "catppuccin-nvim",
+    colorscheme = "gruvbox-material",
+
+    highlights = {
+      init = {
+        NeoTreeGitUntracked = { fg = "#d8a657", bold = false },
+      },
+    },
   },
 }
