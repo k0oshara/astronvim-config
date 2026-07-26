@@ -19,6 +19,19 @@ return {
     mappings = {
       n = {
         ["<Leader>w"] = false,
+        ["d"] = {
+          '"_d',
+          desc = "Delete",
+        },
+        ["D"] = {
+          "d",
+          desc = "Cut",
+        },
+        ["U"] = {
+          "<C-r>",
+          desc = "Redo",
+        },
+        ["<C-r>"] = "<Nop>",
         ["<S-l>"] = {
           function() require("astrocore.buffer").nav(vim.v.count1) end,
           desc = "Next buffer",
@@ -27,6 +40,19 @@ return {
           function() require("astrocore.buffer").nav(-vim.v.count1) end,
           desc = "Previous buffer",
         },
+      },
+      x = {
+        ["d"] = {
+          '"_d',
+          desc = "Delete selection",
+        },
+        ["D"] = {
+          "d",
+          desc = "Cut selection",
+        },
+      },
+      o = {
+        ["D"] = "d",
       },
     },
   },
