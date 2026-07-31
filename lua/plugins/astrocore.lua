@@ -23,6 +23,30 @@ return {
           '"_d',
           desc = "Delete",
         },
+        ["x"] = {
+          '"_x',
+          desc = "Delete character",
+        },
+        ["X"] = {
+          '"_X',
+          desc = "Delete previous character",
+        },
+        ["c"] = {
+          '"_c',
+          desc = "Change",
+        },
+        ["C"] = {
+          '"_C',
+          desc = "Change to end of line",
+        },
+        ["s"] = {
+          '"_s',
+          desc = "Substitute character",
+        },
+        ["S"] = {
+          '"_S',
+          desc = "Substitute line",
+        },
         ["D"] = {
           "d",
           desc = "Cut",
@@ -45,6 +69,18 @@ return {
         ["d"] = {
           '"_d',
           desc = "Delete selection",
+        },
+        ["x"] = {
+          '"_x',
+          desc = "Delete selection",
+        },
+        ["c"] = {
+          '"_c',
+          desc = "Change selection",
+        },
+        ["s"] = {
+          '"_s',
+          desc = "Substitute selection",
         },
         ["D"] = {
           "d",
