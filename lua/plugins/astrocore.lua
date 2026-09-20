@@ -3,6 +3,19 @@ return {
   "AstroNvim/astrocore",
   ---@type AstroCoreOpts
   opts = {
+    autocmds = {
+      markdown_wrap = {
+        {
+          event = { "FileType", "BufWinEnter" },
+          callback = function(args)
+            if vim.bo[args.buf].filetype == "markdown" then
+              vim.opt_local.wrap = true
+              vim.opt_local.linebreak = true
+            end
+          end,
+        },
+      },
+    },
     options = {
       opt = { -- vim.opt.<key>
         relativenumber = false,
