@@ -6,4 +6,6 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.go" },
 }
