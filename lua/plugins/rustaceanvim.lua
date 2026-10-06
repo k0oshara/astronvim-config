@@ -9,6 +9,7 @@ return {
 
       opts.server.default_settings["rust-analyzer"].check = {
         command = "clippy",
+        allTargets = false,
       }
 
       return opts
